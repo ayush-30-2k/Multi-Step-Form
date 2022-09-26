@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react'
+import { Form } from './components/Form'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+    return (
+        <Fragment>
+            <div className='h1'>
+                <div>
+                    <h1 style={{ textAlign: 'center', marginTop: '1rem' }}>Multi Step Form</h1>
+                </div>
+            </div>
+            <section>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <Form />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </Fragment>
+    )
 }
-
-export default App;
